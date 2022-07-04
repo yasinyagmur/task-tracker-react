@@ -1,11 +1,11 @@
-import AddTaskForm from "./AddTaskForm";
-import { useState } from "react";
+import AddTaskForm from './AddTaskForm';
+import { useState } from 'react';
 
-const Header = ({tasks,setTasks}) => {
+const Header = ({ tasks, setTasks }) => {
   const [show, setShow] = useState(false);
   const [btnStyle, setBtnStyle] = useState({
-    name: "show add task bar",
-    bgColor: "purple",
+    name: 'SHOW ADD TASK BAR',
+    bgColor: 'purple',
   });
 
   //! React, default olarak state'leri hemen degistirmeyebilir.
@@ -17,33 +17,32 @@ const Header = ({tasks,setTasks}) => {
   //? https://stackoverflow.com/questions/48563650/does-react-keep-the-order-for-state-updates
 
   const handleShow = () => {
-
     if (show) {
       setBtnStyle({
-        name: "show add task bar",
-        bgColor: "purple",
+        name: 'SHOW ADD TASK BAR',
+        bgColor: 'purple',
       });
     } else {
       setBtnStyle({
-        name: "close add task bar",
-        bgColor: "red",
+        name: 'CLOSE ADD TASK BAR',
+        bgColor: 'red',
       });
     }
     setShow(!show);
-    console.log(show);
   };
+  console.log(show);
+
   return (
     <header className="header">
-      <h1>Task Tracker</h1>
+      <h1>TASK TRACKER</h1>
       <button
+        onClick={handleShow}
         className="btn"
         style={{ backgroundColor: btnStyle.bgColor }}
-        onClick={handleShow}
       >
         {btnStyle.name}
       </button>
-
-      {show && <AddTaskForm tasks={tasks} setTasks={setTasks}/>}
+      {show && <AddTaskForm tasks={tasks} setTasks={setTasks} />}
     </header>
   );
 };
