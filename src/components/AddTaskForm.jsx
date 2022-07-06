@@ -42,7 +42,7 @@ const AddTaskForm = ({ tasks, setTasks }) => {
         </div>
         <div>
           <button type="submit" className="btn btn-submit">
-            Submit
+            Save Task
           </button>
         </div>
       </form>
