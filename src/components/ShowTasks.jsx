@@ -1,4 +1,5 @@
 import { TiTrash } from "react-icons/ti";
+import { TiEdit } from "react-icons/ti";
 import { useState } from "react";
 
 const ShowTasks = ({ tasks,setTasks}) => {
@@ -28,6 +29,7 @@ const ShowTasks = ({ tasks,setTasks}) => {
           <p className="dayP">{day}</p>
         </div>
         <div onClick={()=>handleTaskDel(id)} >
+          <TiEdit size="2em"style={{cursor:'pointer'}}/>
           <TiTrash size="2em" style={{cursor:'pointer'}}/>
         </div>
       </div>
