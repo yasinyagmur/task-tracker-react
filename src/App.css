@@ -63,26 +63,29 @@ body {
   background-color: purple;
   margin: 2rem 0;
 }
-
-.task {
-  background: #f4f4f4;
-  margin: 0.7rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+.showContainer{
+  display: flex;
+  justify-content:space-between;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0.5rem;
+  background-color: azure;
 }
-
-.done {
+.showContainer:hover{
+  cursor: pointer;
+  transform: scale(0.99);
+}
+.taskP{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.dayP{
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+.through{
   border-left: 10px solid rgb(102, 18, 77);
   text-decoration: line-through;
   background-color: darkgrey;
-}
-
-.task h3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.text-center {
-  text-align: center;
 }
