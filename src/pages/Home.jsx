@@ -13,9 +13,11 @@ const Home = () => {
 
   console.log(tasks);
   return (
-    <div>
+    <div className="coplatedContainer">
+      <div className="childContainer">
       <Header tasks={tasks} setTasks={setTasks} />
       <ShowTasks tasks={tasks} setTasks={setTasks}/>
+      </div>
     </div>
   );
 };

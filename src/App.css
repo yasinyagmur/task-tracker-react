@@ -1,3 +1,13 @@
+/* Color Theme Swatches in Hex */
+.Treasurana1 { color: #267365; }
+.Treasurana2 { color: #F2CB05; }
+.Treasurana3 { color: #F29F05; }
+.Treasurana4 { color: #F28705; }
+.Treasurana5 { color: #F23030; }
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,15 +16,11 @@
 
 body {
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to top, #267365 50%, #F28705 100%);
 }
 .container {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(204, 16, 119),
-    rgb(231, 191, 213)
-  );
+
   margin: 3rem auto;
   max-width: 600px;
   padding: 2rem;
@@ -63,29 +69,42 @@ body {
   background-color: purple;
   margin: 2rem 0;
 }
-.showContainer{
+.showContainer {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 0.5rem;
   align-items: center;
   border-radius: 5px;
   margin: 0.5rem;
   background-color: azure;
 }
-.showContainer:hover{
+.showContainer:hover {
   cursor: pointer;
   transform: scale(0.99);
 }
-.taskP{
+.taskP {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.dayP{
+.dayP {
   font-size: 0.7rem;
   font-weight: 300;
 }
-.through{
+.through {
   border-left: 10px solid rgb(102, 18, 77);
   text-decoration: line-through;
   background-color: darkgrey;
+}
+.coplatedContainer {
+  display: flex;
+  justify-content: center;
+  
+}
+.childContainer {
+  width: 50%;
+  background-color: #267365;
+  margin-top: 2rem;
+  border-radius: 20px;
+  height: 80vh;
+
 }

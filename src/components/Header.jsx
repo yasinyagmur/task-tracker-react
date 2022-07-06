@@ -20,12 +20,12 @@ const Header = ({tasks,setTasks}) => {
     if (show) {
       setBtnStyle({
         name: "Show Add Task Bar",
-        bgColor: "purple",
+        bgColor: "#F28705",
       });
     } else {
       setBtnStyle({
         name: "Close Add Task Bar",
-        bgColor: "red",
+        bgColor: "cadetblue",
       });
     }
     setShow(!show);
