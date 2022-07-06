@@ -29,9 +29,9 @@ const AddTaskForm = ({ tasks, setTasks }) => {
           />
         </div>
         <div className="form-control">
-          <label htmlFor="day">Day && Time</label>
+          <label htmlFor="day">Date && Time</label>
           <input
-            type="date"
+            type="datetime-local"
             name="day"
             id="day"
             value={day}
