@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const AddTaskForm = ({ tasks, setTasks }) => {
+// const AddTaskForm = ({ tasks, setTasks, editTask, editDone, setEditDone }) => {
   const [task, setTask] = useState("");
   const [day, setDay] = useState("");
 
@@ -12,7 +13,11 @@ const AddTaskForm = ({ tasks, setTasks }) => {
     setTask("");
     setDay("");
   };
+  // console.log(editTask);
+  
+ 
 
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -37,7 +42,6 @@ const AddTaskForm = ({ tasks, setTasks }) => {
             value={day}
             onChange={(e) => setDay(e.target.value)}
             required
-          
           />
         </div>
         <div>

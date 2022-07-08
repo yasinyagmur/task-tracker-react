@@ -2,6 +2,7 @@ import AddTaskForm from "./AddTaskForm";
 import { useState } from "react";
 
 const Header = ({tasks,setTasks}) => {
+// const Header = ({tasks,setTasks,editTask,editDone,setEditDone}) => {
   const [show, setShow] = useState(false);
   const [btnStyle, setBtnStyle] = useState({
     name: "Show Add Task Bar",
@@ -30,9 +31,9 @@ const Header = ({tasks,setTasks}) => {
     }
     setShow(!show);
   };
-  console.log(show);
+  // console.log(show);
 
-
+// console.log(editTask);
 
 
 
@@ -46,6 +47,7 @@ const Header = ({tasks,setTasks}) => {
         {btnStyle.name}
       </button>
       {show && <AddTaskForm tasks={tasks} setTasks={setTasks}/>}
+      {/* <AddTaskForm tasks={tasks} setTasks={setTasks} /> */}
     </header>
   );
 };
