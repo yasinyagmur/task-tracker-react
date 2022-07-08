@@ -1,10 +1,10 @@
-/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in Hex
 .Treasurana1 { color: #267365; }
 .Treasurana2 { color: #F2CB05; }
 .Treasurana3 { color: #F29F05; }
 .Treasurana4 { color: #F28705; }
 .Treasurana5 { color: #F23030; }
-
+ */
 
 
 
@@ -68,7 +68,7 @@ body {
 .btn-submit {
   display: block;
   width: 100%;
-  background-color: #F28705;
+  background-color: #F28705 !important;
   margin: 2rem 0;
 }
 .showContainer {

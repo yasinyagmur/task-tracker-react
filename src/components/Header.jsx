@@ -6,7 +6,7 @@ const Header = ({tasks,setTasks}) => {
   const [show, setShow] = useState(false);
   const [btnStyle, setBtnStyle] = useState({
     name: "Show Add Task Bar",
-    bgColor: "purple",
+    bgColor: "#F28705",
   });
 
   //! React, default olarak state'leri hemen degistirmeyebilir.

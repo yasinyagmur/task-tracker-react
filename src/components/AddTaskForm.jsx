@@ -27,7 +27,7 @@ const AddTaskForm = ({ tasks, setTasks }) => {
             type="text"
             name="task"
             id="task"
-            placeholder="add task"
+            placeholder="Add Task"
             value={task}
             onChange={(e) => setTask(e.target.value)}
             required

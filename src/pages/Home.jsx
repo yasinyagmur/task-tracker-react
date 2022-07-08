@@ -5,7 +5,7 @@ import ShowTasks from "../components/ShowTasks";
 // import data from "../helper/starterData";
 
 const Home = () => {
-  const [editDone, setEditDone] = useState(false);
+  // const [editDone, setEditDone] = useState(false);
 
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("tasks")) || []
@@ -34,7 +34,7 @@ const Home = () => {
           tasks={tasks}
           setTasks={setTasks}
           // editTask={editTask}
-          setEditDone={setEditDone}
+          // setEditDone={setEditDone}
         />
         <ShowTasks
           tasks={tasks}

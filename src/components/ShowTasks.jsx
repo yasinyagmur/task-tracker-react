@@ -6,7 +6,7 @@ import EditTask from "./EditTask";
 const ShowTasks = ({ tasks, setTasks ,handleEditDone}) => {
   const [done, setDone] = useState(true);
   const [id, setId] = useState("");
-
+console.log(id);
   const handleTaskThrough = (e) => {
     if (done) {
       e.target.classList.add("through");

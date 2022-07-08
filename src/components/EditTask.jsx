@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const EditTask = ({ tasks, id, handleEditDone }) => {
-  const [changeDay, setChangeDay] = useState("");
+  const [changeDay, setChangeDay] = useState(tasks.day);
   const [changeTask, setChangeTask] = useState("");
 
   const handleSave = (e) => {
